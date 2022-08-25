@@ -1,0 +1,141 @@
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container_small {
+    width: 95%;
+    max-width: 300px;
+    margin-inline: auto;
+}
+
+.form-container {
+    background-color: rgb(240, 240, 240);
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: inherit;
+}
+
+
+/* Hero Section */
+
+#hero {
+    height: 70vh;
+    max-height: 550px;
+    position: relative;
+    margin-bottom: 50px;
+    /* overflow: hidden; */
+}
+
+#hero .nav {
+    width: 70%;
+    min-width: 70ch;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 500;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+}
+
+#hero .nav button {
+    background: transparent;
+    font-size: 2rem;
+    -webkit-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in;
+    color: #fff;
+}
+
+#hero #Carousels {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    height: inherit;
+}
+
+#hero #Carousels .Carousel {
+    min-width: 100%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+
+#hero #Carousels .Carousel .content {
+    position: relative;
+    z-index: 0;
+    color: #fff;
+    width: 100%;
+}
+
+#hero #Carousels .Carousel .content::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    inset: 0 0 0 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    -webkit-transform: translate(0, -33%);
+    transform: translate(0, -33%);
+}
+
+#hero #Carousels .Carousel__title {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #0d6efd;
+}
+
+#hero #Carousels .Carousel__descrption {
+    width: calc(100% - 2rem);
+    max-width: 80ch;
+    margin: 0 auto;
+}
+
+#hero #Carousels .Carousel-1 {
+    background-image: url(../Imgs/lego-architecture-skyline-interior-decorating-02.jpg);
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.hoverabl-border-b {
+    border-bottom: 2px solid transparent;
+}
+
+.hoverabl-border-b:hover {
+    border-bottom: 2px solid #FFC107;
+}
+
+.d-end {
+    display: block;
+    margin-left: auto;
+}
+
+.height-100 {
+    height: 80vh;
+}
+
+#Comment-text {
+    resize: none;
+}
